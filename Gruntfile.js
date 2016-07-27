@@ -7,7 +7,7 @@ module.exports = function(grunt) {
                 separator: ';'
             },
             dist: {
-                src: ['src/**/*.js'],
+                src: ['src/js/bootstrap.js'],
                 dest: 'dist/js/<%= pkg.name %>.js'
             }
         },
@@ -22,7 +22,7 @@ module.exports = function(grunt) {
             }
         },
         jshint: {
-            files: ['Gruntfile.js', 'src/**/*.js', 'test/**/*.js'],
+            files: ['Gruntfile.js', 'src/js/bootstrap.js'],
             options: {
                 // options here to override JSHint defaults
                 globals: {
@@ -42,7 +42,7 @@ module.exports = function(grunt) {
                     sourceMapURL: '<%= pkg.name %>.css.map',
                     sourceMapFilename: 'dist/css/<%= pkg.name %>.css.map'
                 },
-                src: 'src/css/bootswatch.less',
+                src: ['src/css/bootswatch.less','src/css/custom.less'],
                 dest: 'dist/css/<%= pkg.name %>.css'
             }
         },
@@ -52,7 +52,7 @@ module.exports = function(grunt) {
                 livereload: true
             },
             scripts: {
-                files: 'src/js/*.js',
+                files: 'src/js/bootstrap.js',
                 tasks: ['concat', 'uglify'],
                 options: {
                     spawn: false
@@ -83,6 +83,20 @@ module.exports = function(grunt) {
                     open: true
                 }
             }
+        },
+        cssmin: {
+            target: {
+                files: [{
+                    expand: true,
+                    cwd: 'dist/css',
+                    src: ['*.css', '!*.min.css'],
+                    dest: 'dist/css',
+                    ext: '.min.css'
+                }]
+            },
+            options: {
+                sourceMap: true
+            }
         }
     });
 
@@ -92,9 +106,12 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-less');
     grunt.loadNpmTasks('grunt-contrib-connect');
+    grunt.loadNpmTasks('grunt-contrib-cssmin');
+
+
     grunt.registerTask('server', 'connect:keepalive');
-    grunt.registerTask('build', ['concat', 'uglify', 'less']);
-    grunt.registerTask('default', ['concat', 'uglify', 'less','connect:base', 'watch']);
+    grunt.registerTask('build', ['concat', 'uglify', 'less', 'cssmin']);
+    grunt.registerTask('default', ['concat', 'uglify', 'less', 'cssmin' ,'connect:base', 'watch']);
     grunt.registerTask('test', ['jshint']);
     //grunt.registerTask('default', ['concat', 'uglify', 'less']);
 
