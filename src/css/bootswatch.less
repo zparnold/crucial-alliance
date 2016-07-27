@@ -17,7 +17,9 @@
   .box-shadow(0 1px 2px rgba(0,0,0,.3));
 
   &-brand {
-    font-size: 24px;
+    font-size: 4em;
+    color: @brand-primary !important;
+    font-family: FlamaCondensedBold, 'sans-serif';
   }
 
   &-inverse {
@@ -621,4 +623,33 @@ input[type="checkbox"],
     }
   }
 }
-
+@font-face {
+  font-family: FlamaCondensedBold;
+  src: url('../fonts/FlamaCondensed-Bold.otf');
+}
+@font-face {
+  font-family: GothamBlack;
+  src: url('../fonts/gotham-black.ttf');
+}
+.container-fluid{
+  padding: 0;
+}
+.page-top{
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+}
+#front-page-carousel{
+  max-height: 500px;
+}
+.carousel-inner{
+  max-height: 500px;
+  .item{
+    max-height: 500px;
+    img{
+      margin: 0 auto;
+      max-height: 500px;
+    }
+  }
+}

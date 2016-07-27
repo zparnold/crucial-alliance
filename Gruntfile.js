@@ -7,7 +7,7 @@ module.exports = function(grunt) {
                 separator: ';'
             },
             dist: {
-                src: ['src/js/bootstrap.js'],
+                src: ['src/js/bootstrap.js', 'src/js/custom.js'],
                 dest: 'dist/js/<%= pkg.name %>.js'
             }
         },
@@ -22,7 +22,7 @@ module.exports = function(grunt) {
             }
         },
         jshint: {
-            files: ['Gruntfile.js', 'src/js/bootstrap.js'],
+            files: ['Gruntfile.js', 'src/js/bootstrap.js', 'src/js/bootstrap.js'],
             options: {
                 // options here to override JSHint defaults
                 globals: {
@@ -42,7 +42,7 @@ module.exports = function(grunt) {
                     sourceMapURL: '<%= pkg.name %>.css.map',
                     sourceMapFilename: 'dist/css/<%= pkg.name %>.css.map'
                 },
-                src: ['src/css/bootswatch.less','src/css/custom.less'],
+                src: ['src/css/bootswatch.less'],
                 dest: 'dist/css/<%= pkg.name %>.css'
             }
         },
@@ -52,7 +52,7 @@ module.exports = function(grunt) {
                 livereload: true
             },
             scripts: {
-                files: 'src/js/bootstrap.js',
+                files: ['src/js/bootstrap.js', 'src/js/bootstrap.js'],
                 tasks: ['concat', 'uglify'],
                 options: {
                     spawn: false
