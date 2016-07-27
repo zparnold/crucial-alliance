@@ -1,0 +1,22 @@
+{
+  "name": "crucial-alliance",
+  "version": "1.0.0",
+  "description": "The Crucial Alliance Book Landing Page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zparnold/crucial-alliance.git"
+  },
+  "author": "Zach Arnold",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zparnold/crucial-alliance/issues"
+  },
+  "homepage": "https://github.com/zparnold/crucial-alliance#readme",
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}

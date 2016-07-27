@@ -1,0 +1,21 @@
+{
+  "name": "crucial-alliance",
+  "description": "The Crucial Alliance Book Landing Page",
+  "main": "index.js",
+  "authors": [
+    "Zach Arnold"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/zparnold/crucial-alliance",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}
