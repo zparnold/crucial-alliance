@@ -52,7 +52,7 @@ module.exports = function(grunt) {
                 livereload: true
             },
             scripts: {
-                files: ['src/js/bootstrap.js', 'src/js/bootstrap.js'],
+                files: ['src/js/bootstrap.js', 'src/js/custom.js'],
                 tasks: ['concat', 'uglify'],
                 options: {
                     spawn: false

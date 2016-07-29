@@ -7492,16 +7492,28 @@ input[type="checkbox"]:disabled:checked:after,
   min-height: 1000px;
   background: transparent;
 }
-h1 {
-  font-family: FlamaCondensedBold, sans-serif;
-  color: #641014;
-}
-p {
+.parallax-window p {
   color: white;
   font-size: 1.5em;
   font-weight: 600;
 }
+h1 {
+  font-family: FlamaCondensedBold, sans-serif;
+  color: #641014;
+}
 .top-5em {
   padding-top: 5em;
+}
+#author {
+  min-height: 800px;
+}
+footer {
+  background-color: #212121;
+}
+footer p {
+  vertical-align: middle;
+}
+footer .footer {
+  padding: 3em 0;
 }
 /*# sourceMappingURL=crucial-alliance.css.map */
