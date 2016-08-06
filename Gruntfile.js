@@ -46,7 +46,6 @@ module.exports = function(grunt) {
                 dest: 'dist/css/<%= pkg.name %>.css'
             }
         },
-
         watch: {
             options: {
                 livereload: true
@@ -97,6 +96,19 @@ module.exports = function(grunt) {
             options: {
                 sourceMap: true
             }
+        },
+        imagemin: {                          // Task
+            dynamic: {
+                options: {                       // Target options
+                    optimizationLevel: 3,
+                },
+                files: [{
+                    expand: true,                  // Enable dynamic expansion
+                    cwd: 'src/img/',                   // Src matches are relative to this path
+                    src: ['*.{png,jpg,gif}'],   // Actual patterns to match
+                    dest: 'dist/img/'                  // Destination path prefix
+                }]
+            }
         }
     });
 
@@ -107,11 +119,11 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-less');
     grunt.loadNpmTasks('grunt-contrib-connect');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
-
+    grunt.loadNpmTasks('grunt-contrib-imagemin');
 
     grunt.registerTask('server', 'connect:keepalive');
-    grunt.registerTask('build', ['concat', 'uglify', 'less', 'cssmin']);
-    grunt.registerTask('default', ['concat', 'uglify', 'less', 'cssmin' ,'connect:base', 'watch']);
+    grunt.registerTask('build', ['concat', 'uglify', 'less', 'cssmin', 'imagemin']);
+    grunt.registerTask('default', ['concat', 'uglify', 'less', 'cssmin','imagemin' ,'connect:base', 'watch']);
     grunt.registerTask('test', ['jshint']);
     //grunt.registerTask('default', ['concat', 'uglify', 'less']);
 
