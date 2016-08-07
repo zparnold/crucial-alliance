@@ -644,10 +644,10 @@ input[type="checkbox"],
       color: #fff;
       font-size: 1.25em;
     }
-    .fixed{
-      font-size: 1.25em;
-    }
   }
+}
+.navbar-nav > li > a{
+  font-size: 1.25em;
 }
 .carousel-inner {
   .item {
@@ -657,7 +657,7 @@ input[type="checkbox"],
   }
 }
 .parallax-window {
-  min-height: 1000px;
+  //min-height: 1000px;
   background: transparent;
   p{
     color: white;
@@ -672,12 +672,18 @@ h1{
 
 .top-5em{
   padding-top: 5em;
+  padding-bottom: 5em;
 }
 .top-15em{
   padding-top: 15em;
+  padding-bottom: 15em;
 }
-#author{
-  min-height: 800px;
+#front-hero{
+  a{
+    &:hover{
+      text-decoration: none;
+    }
+  }
 }
 #additional-resources{
 
@@ -700,4 +706,14 @@ footer{
   h3{
     color: white;
   }
+}
+.cta-1{
+  padding: 2em 0;
+}
+blockquote{
+  margin-bottom: 0;
+}
+#quote-2{
+  color: white;
+  background-color: @brand-primary;
 }

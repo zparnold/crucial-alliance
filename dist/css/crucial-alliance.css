@@ -7486,14 +7486,13 @@ input[type="checkbox"]:disabled:checked:after,
   color: #fff;
   font-size: 1.25em;
 }
-.page-top #navbar-main .fixed {
+.navbar-nav > li > a {
   font-size: 1.25em;
 }
 .carousel-inner .item img {
   margin: 0 auto;
 }
 .parallax-window {
-  min-height: 1000px;
   background: transparent;
 }
 .parallax-window p {
@@ -7507,12 +7506,14 @@ h1 {
 }
 .top-5em {
   padding-top: 5em;
+  padding-bottom: 5em;
 }
 .top-15em {
   padding-top: 15em;
+  padding-bottom: 15em;
 }
-#author {
-  min-height: 800px;
+#front-hero a:hover {
+  text-decoration: none;
 }
 footer {
   background-color: #212121;
@@ -7529,5 +7530,15 @@ footer .footer {
 }
 .container#description h3 {
   color: white;
+}
+.cta-1 {
+  padding: 2em 0;
+}
+blockquote {
+  margin-bottom: 0;
+}
+#quote-2 {
+  color: white;
+  background-color: #641014;
 }
 /*# sourceMappingURL=crucial-alliance.css.map */
