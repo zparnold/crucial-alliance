@@ -7484,6 +7484,10 @@ input[type="checkbox"]:disabled:checked:after,
 }
 .page-top #navbar-main a {
   color: #fff;
+  font-size: 1.25em;
+}
+.page-top #navbar-main .fixed {
+  font-size: 1.25em;
 }
 .carousel-inner .item img {
   margin: 0 auto;
@@ -7504,6 +7508,9 @@ h1 {
 .top-5em {
   padding-top: 5em;
 }
+.top-15em {
+  padding-top: 15em;
+}
 #author {
   min-height: 800px;
 }
@@ -7515,5 +7522,12 @@ footer p {
 }
 footer .footer {
   padding: 3em 0;
+}
+.container#description h2 {
+  color: #641014;
+  font-weight: bold;
+}
+.container#description h3 {
+  color: white;
 }
 /*# sourceMappingURL=crucial-alliance.css.map */

@@ -122,8 +122,9 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-imagemin');
 
     grunt.registerTask('server', 'connect:keepalive');
-    grunt.registerTask('build', ['concat', 'uglify', 'less', 'cssmin', 'imagemin']);
-    grunt.registerTask('default', ['concat', 'uglify', 'less', 'cssmin','imagemin' ,'connect:base', 'watch']);
+    grunt.registerTask('images', 'imagemin');
+    grunt.registerTask('build', ['concat', 'uglify', 'less', 'cssmin']);
+    grunt.registerTask('default', ['concat', 'uglify', 'less', 'cssmin' ,'connect:base', 'watch']);
     grunt.registerTask('test', ['jshint']);
     //grunt.registerTask('default', ['concat', 'uglify', 'less']);
 
