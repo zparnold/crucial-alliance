@@ -7486,6 +7486,11 @@ input[type="checkbox"]:disabled:checked:after,
   color: #fff;
   font-size: 1.25em;
 }
+@media (max-width: 767px) {
+  .page-top #navbar-main {
+    background-color: #641014;
+  }
+}
 .navbar-nav > li > a {
   font-size: 1.25em;
 }
@@ -7540,5 +7545,53 @@ blockquote {
 #quote-2 {
   color: white;
   background-color: #641014;
+}
+.navbar-header button.navbar-toggle span.icon-bar {
+  background-color: white;
+}
+#contributors .image {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+#contributors .image img {
+  width: 100%;
+  vertical-align: top;
+}
+#contributors .image:after,
+#contributors .image:before {
+  position: absolute;
+  opacity: 0;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+}
+#contributors .image:after {
+  content: '\A';
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+#contributors .image:before {
+  content: attr(data-content);
+  width: 100%;
+  color: #fff;
+  z-index: 1;
+  bottom: 0;
+  padding: 4px 10px;
+  text-align: center;
+  background: #641014;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+#contributors .image:hover:after,
+#contributors .image:hover:before {
+  opacity: 1;
+}
+#contributors .modal-body p {
+  font-size: 1em;
+  font-weight: 400;
+  color: #333333;
 }
 /*# sourceMappingURL=crucial-alliance.css.map */
