@@ -7594,4 +7594,10 @@ blockquote {
   font-weight: 400;
   color: #333333;
 }
+.bottom-2em {
+  padding-bottom: 2em;
+}
+.modal-dialog {
+  margin: 10% auto;
+}
 /*# sourceMappingURL=crucial-alliance.css.map */
