@@ -28,4 +28,5 @@ $(document).ready(function(){
     var date = new Date();
     var yr = date.getFullYear().toString();
    $("#copy").text("© "+yr+" Crucial Alliance All Rights Reserved");
+
 });

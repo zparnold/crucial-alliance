@@ -11,6 +11,7 @@
     <link href="dist/css/crucial-alliance.css" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
     <link href="dist/css/animate.css" rel="stylesheet">
+    <link href="dist/css/contact-buttons.css" rel="stylesheet">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -39,7 +40,10 @@
                             <a href="#author">The Author</a>
                         </li>
                         <li>
-                            <a href="#motivations">Motivations + Inspiration</a>
+                            <a href="#book">The Book</a>
+                        </li>
+                        <li>
+                            <a href="#motivations">Motivations</a>
                         </li>
                         <li>
                             <a href="#contributors">Contributors</a>
@@ -85,6 +89,30 @@
                     the 1960s, <i>fully half were Jewish</i> at a time when Jews constituted a mere <i>two percent</i>
                     of the American population."
                 </blockquote>
+            </div>
+        </div>
+    </section>
+    <section id="book" class="">
+        <div class="parallax-window" data-parallax="scroll" data-image-src="dist/img/BGDark.png">
+            <div class="container">
+                <div class="row top-5em">
+                    <div class="col-xs-12 text-center"><h1>ABOUT THE AUTHOR</h1></div>
+                    <div class="col-sm-4">
+                        <img class='img-responsive' src="dist/img/DSC_7069.jpg">
+                    </div>
+                    <div class="col-sm-8 text-center"><p>
+                        Calev Myers is an Israel-based lawyer, human rights activist, and author. He founded the
+                        Jerusalem Institute of Justice, a prominent Israeli NGO advocating for freedom of religion,
+                        human rights and civil justice in Israel and throughout the Middle East. Beyond establishing the
+                        Jerusalem Institute of Justice, Calev has worked for many years as a partner at Yehuda Raveh &
+                        Co. Law Offices, a leading firm founded by Gideon Hausner, Israel's State Prosecutor in the
+                        Adolf Eichman trial. Calev is a Board Member and activist of the International Association of
+                        Jewish Lawyers and Jurists, an organization combatting racism, xenophobia, anti-Semitism,
+                        Holocaust denial, and negation of the State of Israel. He is a regular contributor to the op-ed
+                        pages of major Israeli newspapers and news websites and makes frequent appearances on Israeli
+                        and international television programs as a human rights current events analyst.
+                    </p></div>
+                </div>
             </div>
         </div>
     </section>
@@ -743,8 +771,19 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="dist/js/parallax.min.js"></script>
 <script src="dist/js/wow.min.js"></script>
+<script src="dist/js/jquery.contact-buttons.js"></script>
 <script>
     new WOW().init();
+    $.contactButtons({
+        effect  : 'slide-on-scroll',
+        buttons : {
+            'facebook':   { class: 'facebook', use: true, link: 'https://www.facebook.com/pages/mycompany', extras: 'target="_blank"' },
+            'linkedin':   { class: 'linkedin', use: true, link: 'https://www.linkedin.com/company/mycompany' },
+            'twitter':     { class: 'twitter',   use: true, link: 'https://plus.google.com/myidongoogle' },
+            'instagram':   { class: 'instagram',  use: true, link: 'http://github.com', icon: 'instagram', title: 'My title for the button' },
+            'email':      { class: 'email separated',    use: true, link: 'test@web.com' }
+        }
+    });
 </script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="dist/js/crucial-alliance.min.js"></script>
