@@ -7537,14 +7537,16 @@ footer .footer {
   color: white;
 }
 .cta-1 {
+  color: white;
+  font-weight: bold;
+  background: transparent;
+}
+.cta-1 blockquote {
   padding: 2em 0;
+  min-height: 100px;
 }
 blockquote {
   margin-bottom: 0;
-}
-#quote-2 {
-  color: white;
-  background-color: #641014;
 }
 .navbar-header button.navbar-toggle span.icon-bar {
   background-color: white;
@@ -7607,5 +7609,17 @@ blockquote {
 }
 .modal-dialog {
   margin: 10% auto;
+}
+.baskerville {
+  font-family: 'Libre Baskerville', serif;
+}
+.white {
+  color: #fff;
+}
+.red {
+  color: #641014;
+}
+.black {
+  color: #000;
 }
 /*# sourceMappingURL=crucial-alliance.css.map */
