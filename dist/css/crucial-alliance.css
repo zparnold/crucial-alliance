@@ -7544,6 +7544,7 @@ footer .footer {
 .cta-1 blockquote {
   padding: 2em 0;
   min-height: 100px;
+  font-size: 1.5em;
 }
 blockquote {
   margin-bottom: 0;
@@ -7556,6 +7557,7 @@ blockquote {
   width: 250px;
   height: 250px;
   overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 #contributors .image img {
   position: absolute;
@@ -7617,9 +7619,19 @@ blockquote {
   color: #fff;
 }
 .red {
-  color: #641014;
+  color: #641014 !important;
 }
 .black {
-  color: #000;
+  color: #000 !important;
+}
+img {
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+.card-1 {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+.card-1:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 /*# sourceMappingURL=crucial-alliance.css.map */
