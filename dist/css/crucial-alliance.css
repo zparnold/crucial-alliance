@@ -7060,7 +7060,7 @@ select.form-control {
   -moz-appearance: none;
   appearance: none;
   padding-left: 0;
-  padding-right: 0\9;
+  padding-right: 0 \9;
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAMAAACelLz8AAAAJ1BMVEVmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmaP/QSjAAAADHRSTlMAAgMJC0uWpKa6wMxMdjkoAAAANUlEQVR4AeXJyQEAERAAsNl7Hf3X6xt0QL6JpZWq30pdvdadme+0PMdzvHm8YThHcT1H7K0BtOMDniZhWOgAAAAASUVORK5CYII=);
   background-size: 13px;
   background-repeat: no-repeat;
@@ -7557,10 +7557,16 @@ blockquote {
 }
 #contributors .image {
   position: relative;
-  width: 250px;
-  height: 250px;
+  height: 300px;
   overflow: hidden;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+#contributors .image:hover img {
+  -webkit-filter: none;
+  /* Chrome, Safari, Opera */
+  filter: none;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
 }
 #contributors .image img {
   position: absolute;
@@ -7572,11 +7578,14 @@ blockquote {
   min-height: 100%;
   min-width: 100%;
   vertical-align: top;
+  -webkit-filter: grayscale(100%);
+  /* Chrome, Safari, Opera */
+  filter: grayscale(100%);
 }
 #contributors .image:after,
 #contributors .image:before {
   position: absolute;
-  opacity: 0;
+  opacity: 1;
   transition: all 0.5s;
   -webkit-transition: all 0.5s;
 }
@@ -7586,7 +7595,6 @@ blockquote {
   height: 100%;
   top: 0;
   left: 0;
-  background: rgba(0, 0, 0, 0.6);
 }
 #contributors .image:before {
   content: attr(data-content);
