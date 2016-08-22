@@ -7502,8 +7502,8 @@ input[type="checkbox"]:disabled:checked:after,
 }
 .parallax-window p {
   color: white;
+  font-family: Roboto, sans-serif;
   font-size: 1.25em;
-  font-weight: 600;
 }
 h1 {
   font-family: FlamaCondensedBold, sans-serif;
@@ -7647,5 +7647,10 @@ img {
 }
 p.text-15em {
   font-size: 1.5em;
+}
+.btn-lg,
+.btn-group-lg > .btn {
+  padding: 20px 34px;
+  font-size: 24px;
 }
 /*# sourceMappingURL=crucial-alliance.css.map */
