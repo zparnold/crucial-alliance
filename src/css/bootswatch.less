@@ -721,7 +721,7 @@ footer {
 .container#description {
 
   h2 {
-    color: @brand-primary;
+    color: white;
     font-weight: bold;
   }
   h3 {
@@ -734,9 +734,11 @@ footer {
   font-weight: bold;
   background: transparent;
   blockquote {
-    padding: 2em 0;
+    padding: 2em 0.5em;
     min-height: 100px;
-    font-size: 1.5em;
+    font-size: 1.25em;
+    font-family: Roboto, sans-serif;
+    font-weight: normal;
   }
 }
 
@@ -867,4 +869,20 @@ p.text-15em {
 }
 .lime-green{
   background-color: #32CD32;
+}
+@media(max-width: 420px) {
+  a.btn-lg {
+    font-size: 20px;
+  }
+
+  #hamburger {
+    margin-right: 25px;
+  }
+
+  h1.book-title {
+    font-size: 7em;
+  }
+}
+.background-dark-grey{
+  background-color: @gray-dark;
 }

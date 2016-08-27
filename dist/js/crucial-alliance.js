@@ -2381,8 +2381,10 @@ if (typeof jQuery === 'undefined') {
 $(window).scroll(function() {
     if ($(document).scrollTop() > 1) {
         $('.navbar').removeClass('page-top');
+        $('#hamburger > .icon-bar').css('background-color','#666');
     } else {
         $('.navbar').addClass('page-top');
+        $('#hamburger > .icon-bar').css('background-color','#fff');
     }
 });
 
