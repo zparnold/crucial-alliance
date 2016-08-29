@@ -7659,7 +7659,7 @@ p.text-15em {
   margin-top: 0;
 }
 .lime-green {
-  background-color: #32CD32;
+  background-color: #7ABD2B;
 }
 @media (max-width: 420px) {
   a.btn-lg {
@@ -7677,5 +7677,9 @@ p.text-15em {
 }
 .about-the-book {
   margin-top: -10px;
+}
+.btn-margin {
+  margin-top: 16px;
+  margin-bottom: 11.5px;
 }
 /*# sourceMappingURL=crucial-alliance.css.map */
