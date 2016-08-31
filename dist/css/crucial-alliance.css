@@ -7584,7 +7584,8 @@ blockquote {
   vertical-align: top;
   -webkit-filter: grayscale(100%);
   /* Chrome, Safari, Opera */
-  filter: gray;
+  filter: grayscale(100%);
+  -ms-filter: gray;
 }
 #contributors .image:after,
 #contributors .image:before {
