@@ -637,8 +637,11 @@ input[type="checkbox"],
 
 @font-face {
   font-family: GothamBlack;
-  src: url('../fonts/gotham-black.ttf'),
-  url('../fonts/gotham-black.eot');
+  src: url('../fonts/gotham-black.eot');
+  src: url('../fonts/gotham-black.eot?#iefix')
+  format('embedded-opentype'),
+  url('../fonts/gotham-black.woff') format('woff'),
+  url('../fonts/gotham-black.ttf') format('truetype');
 }
 
 .container-fluid {
