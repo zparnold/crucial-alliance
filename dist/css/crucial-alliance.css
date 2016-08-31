@@ -7467,7 +7467,9 @@ input[type="checkbox"]:disabled:checked:after,
 }
 @font-face {
   font-family: FlamaCondensedBold;
-  src: url('../fonts/FlamaCondensed-Bold.otf'), url('../fonts/FlamaCondensed-Bold.eot');
+  src: url('../fonts/FlamaCondensed-Bold.otf');
+  src: url('../fonts/FlamaCondensed-Bold.eot');
+  src: url('../fonts/FlamaCondensed-Bold.eot?#iefix') format('embedded-opentype');
 }
 @font-face {
   font-family: GothamBlack;
